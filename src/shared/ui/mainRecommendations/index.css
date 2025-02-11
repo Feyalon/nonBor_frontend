@@ -1,0 +1,15 @@
+.main_content_productCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.main-content-wrapper {
+  padding-bottom: 150px; /* Adjust this value based on the height of your bottom navigation */
+}
+.mainRecommendation {
+  overflow-y: auto;
+  height: 100vh;
+  padding-bottom: 60px; /* Adjust this value to match the height of your bottom navigation */
+}

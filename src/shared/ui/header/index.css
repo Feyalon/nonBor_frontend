@@ -1,0 +1,35 @@
+.sticky-header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 40px; /* Adjust based on your logo size */
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
