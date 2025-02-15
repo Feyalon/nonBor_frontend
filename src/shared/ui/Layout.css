@@ -1,0 +1,24 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 60px; /* Высота BottomNav */
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px; /* Фиксированная высота */
+  background-color: #1c1c1e; /* Темный фон */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}

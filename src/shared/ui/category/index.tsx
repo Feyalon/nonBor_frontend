@@ -1,14 +1,14 @@
 import React from "react";
 
-const Product: React.FC<{ price: number; image: string }> = ({
-  price,
+const Category: React.FC<{ title: string; image: string }> = ({
+  title,
   image,
 }) => {
   return (
     <div className="main_category_content_products_item">
       <img src={image} alt="" />
-      <h2>{price}</h2>
+      <h2>{title}</h2>
     </div>
   );
 };
-export default Product;
+export default Category;

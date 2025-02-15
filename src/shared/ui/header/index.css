@@ -3,14 +3,14 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-
+  color: whitesmoke;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
   max-width: 1200px; /* Adjust based on your design */
   margin: 0 auto;
 }
@@ -31,5 +31,21 @@
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-
+}
+.logo2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo2 img {
+  width: 40px; /* Adjust based on your logo size */
+  height: auto;
+  margin-right: 10px;
+}
+.logo2 button {
+  background-color: unset;
+  border: none;
+  width: 40px;
+  height: 40px;
+  
 }

@@ -16,11 +16,11 @@ const ProductCart: React.FC<{ name: string, price: number, image: string, oldPri
       </p>
       <div className="product_price">
         {oldPrice <= price ? (
-            <span>{price} so'm</span>
+            <span className="price">{price} so'm</span>
           ) : (
             <div>
               <span className="old_price">{oldPrice} so'm</span>
-              <span className="price">{price} so'm</span>
+              <span className="price blue">{price} so'm</span>
             </div>
           )}
       </div>

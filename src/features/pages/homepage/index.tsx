@@ -1,18 +1,15 @@
 import React from "react";
 import MainHeader from "../../../shared/ui/mainHeader";
 import Main from "../../../shared/ui/main";
-import BottomNav from "../../../shared/ui/bottomNav";
-import MainRecommendations from "../../../shared/ui/mainRecommendations";
+import Header from "../../../shared/ui/header";
 const HomePage: React.FC = (): JSX.Element => {
   return (
     <div className="main">
-        
+      <Header />
       <MainHeader />
       <Main />
-      {/* <MainRecommendations /> */}
-
-      <BottomNav />
     </div>
   );
 };
+
 export default HomePage;

@@ -1,0 +1,144 @@
+.search-page {
+  background-color: #2C2A2A;
+  color: white;
+  padding: 10px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #333333;
+  color: white;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+.search-button img{
+    width: 20px;
+}
+
+.tag-list h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag-button {
+  background-color: #333333;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-button img {
+  margin-right: 5px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.add-to-cart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  flex-direction: column;
+}
+.product-price-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-price-content img {
+  width: 20px;
+}
+.product_old_price{
+    text-decoration: line-through;
+    color: whitesmoke;
+    font-size: 16px;
+}
+.product_price{
+    color: whitesmoke;
+    font-size: 16px;
+}
+.blue{
+    color: blue;
+}
+.filter-button img{
+    width: 20px;
+}
+.product-image{
+  width: 190px;
+  height: 240px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  
+}

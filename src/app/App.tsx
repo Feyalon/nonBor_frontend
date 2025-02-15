@@ -1,14 +1,11 @@
 import React from "react";
 import "./App.css";
-import { RouterProvider } from "react-router";
+import { RouterProvider } from "react-router-dom";
 import router from "../features/pages/router";
 
 const App: React.FC = (): JSX.Element => {
-  return (
-    <div className="app">
-      <RouterProvider  router={router}/>
-    </div>
-  );
+  return <RouterProvider router={router} /> ;
 };
 
 export default App;
+
