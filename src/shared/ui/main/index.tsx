@@ -1,14 +1,10 @@
 import React from "react";
-import Product from "../product";
-import UseProduct from "../../hooks/useProducts";
-import useProductCards from "../../hooks/useProductCards";
 import "./index.css";
 import MainRecommendations from "../mainRecommendations";
 import UseCategory from "../../hooks/useCategory";
 import Category from "../category";
 
 const Main: React.FC = (): JSX.Element => {
-  const { productCards } = useProductCards();
   const { category } = UseCategory();
   return (
     <div className="main_content">
