@@ -1,9 +1,10 @@
 import useProductCards from "../../hooks/useProductCards";
+import UseProduct from "../../hooks/useProducts";
 import ProductCart from "../productCart";
 import "./index.css";
 
 const MainRecommendations = () => {
-  const { productCards, loading, error } = useProductCards();
+  const {products} = UseProduct();
 
   return (
     <div className="mainRecommendation">
@@ -24,9 +25,7 @@ const MainRecommendations = () => {
           Saralash
         </button>
       </div>
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error.message}</p>}
-      {!loading && !error && (
+
         <div className="main_content-wrapper">
           <div className="category">
             <img
@@ -36,18 +35,17 @@ const MainRecommendations = () => {
             <h2>Samarqand nonlari</h2>
           </div>
           <div className="main_content_productCards">
-            {productCards.map((productCard) => (
+            {products.map((item) => (
               <ProductCart
-                key={productCard.id}
-                name={productCard.name}
-                price={productCard.price}
-                image={productCard.image}
-                oldPrice={productCard.oldPrice}
+                key={item.id}
+                name={item.name}
+                price={3000}
+                image={item.photoUrl || ""}
+                oldPrice={3400}
               />
             ))}
           </div>
         </div>
-      )}
     </div>
   );
 };

@@ -18,7 +18,7 @@ const ProductCart: React.FC<{ name: string, price: number, image: string, oldPri
         {oldPrice <= price ? (
             <span className="price">{price} so'm</span>
           ) : (
-            <div>
+            <div className="product_content">
               <span className="old_price">{oldPrice} so'm</span>
               <span className="price blue">{price} so'm</span>
             </div>

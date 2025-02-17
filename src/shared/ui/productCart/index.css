@@ -18,3 +18,7 @@
 .blue{
     color: blue;
 }
+.product_content{
+    display: flex;
+    gap: 10px;
+}
