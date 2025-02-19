@@ -1,10 +1,13 @@
-import useProductCards from "../../hooks/useProductCards";
-import UseProduct from "../../hooks/useProducts";
+import { Link } from "react-router";
 import ProductCart from "../productCart";
 import "./index.css";
+import useProductCards from "../../hooks/useProductCards";
+import IProductItem from "../../types/productItem"
 
 const MainRecommendations = () => {
-  const {products} = UseProduct();
+  const {
+    productCards
+  } = useProductCards()
 
   return (
     <div className="mainRecommendation">
@@ -35,14 +38,16 @@ const MainRecommendations = () => {
             <h2>Samarqand nonlari</h2>
           </div>
           <div className="main_content_productCards">
-            {products.map((item) => (
-              <ProductCart
-                key={item.id}
-                name={item.name}
-                price={3000}
-                image={item.photoUrl || ""}
-                oldPrice={3400}
-              />
+            {productCards.map((item: IProductItem) => (
+              <Link to={`/${item.productId}`}>
+                <ProductCart
+                  key={item.productId}
+                  name={item.name}
+                  price={item.price}
+                  oldPrice={item.oldPrice}
+                  image={item.photoUrl}
+                />
+              </Link>
             ))}
           </div>
         </div>

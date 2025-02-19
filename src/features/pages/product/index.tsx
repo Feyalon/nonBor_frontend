@@ -1,28 +1,28 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import useProductCards from '../../../shared/hooks/useProductCards';
+import useProduct from '../../../shared/hooks/useProduct';
 
 const ProductDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const { productCards, loading, error } = useProductCards();
+  const { product, loading, error } = useProduct(Number(id));
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
-  console.log("Product: ", productCards);
-
-  const product = productCards.find(p => p.id === Number(id));
-
-  if (!product) return <div>Product not found</div>;
-
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading product details.</p>;
   return (
     <div className="mainRecommendation">
       <div className="main-content-wrapper">
         <h1>Mahsulotlar</h1>
         <div className="product-details">
-          <img src={product.image} alt={product.name} />
-          <h2>{product.name}</h2>
-          <p>Price: {product.price} сум</p>
-          <button>Savatga qo'shish</button>
+          <img
+            src={"https://s3-alpha-sig.figma.com/img/3"}
+            alt="product"
+          />
+          <div className="product-details-content">
+            <h2>{product?.name}</h2>
+            <p>{product?.price}</p>
+            <button>Savatchaga qo'shish</button>
+            <p>{product?.description}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -30,3 +30,4 @@ const ProductDetailsPage: React.FC = () => {
 };
 
 export default ProductDetailsPage;
+

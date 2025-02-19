@@ -7,4 +7,11 @@ export interface IProduct {
   photoUrl?: string;
   description?: string;
   deliveryTime?: string;
+  price?: number; // Add price here if needed
 }
+
+// If you need a separate Product interface, ensure it extends IProduct or includes all necessary fields
+export interface Product extends IProduct {
+  price: number;
+}
+

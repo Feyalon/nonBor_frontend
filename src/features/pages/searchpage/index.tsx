@@ -7,14 +7,13 @@ import './styles.css';
 
 const SearchPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const { productCards, loading, error } = useProductCards();
+  const { productCards, loading } = useProductCards();
 
   const filteredProducts = productCards.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
 
   return (
     <div className="search-page">
