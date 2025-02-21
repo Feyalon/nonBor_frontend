@@ -15,7 +15,7 @@ const ProductCart: React.FC<{ name: string, price: number, image: string, oldPri
         {name}
       </p>
       <div className="product_price">
-        {oldPrice <= price ? (
+        {oldPrice == null ? (
             <span className="price">{price} so'm</span>
           ) : (
             <div className="product_content">

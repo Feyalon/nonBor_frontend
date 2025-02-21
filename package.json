@@ -12,6 +12,8 @@
   "dependencies": {
     "axios": "^1.7.9",
     "lucide-react": "^0.474.0",
+    "mobx": "^6.13.6",
+    "mobx-react": "^9.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^7.1.5",

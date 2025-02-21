@@ -142,3 +142,9 @@
   border-radius: 20px;
   
 }
+.product-price-content div{
+  display: flex;;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}

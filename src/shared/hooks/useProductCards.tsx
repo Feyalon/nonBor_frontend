@@ -9,7 +9,6 @@ const useProductCards = () => {
 
     getProductCards().then((result) => {
       setProductCards(result);
-      console.log(result)
       setLoading(false);
     }).catch((error) => {
       setError(error);

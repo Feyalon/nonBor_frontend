@@ -16,7 +16,7 @@ const useProduct = (id: number): UseProductResult => {
       setError(false);
       try {
         const response = await getProductsById(id);
-        setProduct(response.data);
+        setProduct(response);
       } catch (err) {
         setError(true);
       } finally {

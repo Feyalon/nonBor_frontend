@@ -1,5 +1,5 @@
 export interface IProduct {
-  id: number;
+  productId: number;
   businessId: number;
   categoryId: number;
   state: 'active' | 'inactive';
@@ -7,7 +7,8 @@ export interface IProduct {
   photoUrl?: string;
   description?: string;
   deliveryTime?: string;
-  price?: number; // Add price here if needed
+  price?: number;
+  oldPrice?: number // Add price here if needed
 }
 
 // If you need a separate Product interface, ensure it extends IProduct or includes all necessary fields
