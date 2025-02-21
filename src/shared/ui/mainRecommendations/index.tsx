@@ -3,7 +3,6 @@ import ProductCart from "../productCart";
 import "./index.css";
 import useProductCards from "../../hooks/useProductCards";
 import IProductItem from "../../types/productItem"
-
 const MainRecommendations = () => {
   const {
     productCards
@@ -38,10 +37,9 @@ const MainRecommendations = () => {
             <h2>Samarqand nonlari</h2>
           </div>
           <div className="main_content_productCards">
-            {productCards.map((item: IProductItem) => (
-              <Link to={`/${item.productId}`}>
+            {productCards.map((item: IProductItem, index) => (
+              <Link to={`/${item.productId}`} key={`${item.name}-${index}`}>
                 <ProductCart
-                  key={item.productId}
                   name={item.name}
                   price={item.price}
                   oldPrice={item.oldPrice}
