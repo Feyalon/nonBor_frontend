@@ -22,12 +22,12 @@
 .favorite-item {
   display: flex;
   align-items: center;
-  background-color: #2a2a2a;
   border-radius: 8px;
-  padding: 15px;
   margin-bottom: 15px;
   position: relative;
+  justify-content: space-between;
 }
+
 
 .favorite-item img {
   width: 80px;
@@ -103,4 +103,13 @@
   font-size: 16px;
   color: #ada9a9;
   text-align: center;
+}
+.favorite-stick-list{
+  display: flex;
+  flex-direction: column;
+}
+.favorite-stick-list button{
+  background-color: transparent;
+  border: none;
+  width: 20px;
 }

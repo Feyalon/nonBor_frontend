@@ -14,14 +14,14 @@ const MainRecommendations = () => {
       <div className="tags">
         <button className="tag-button">
           <img
-            src="https://s3-alpha-sig.figma.com/img/bd94/37b8/106335c639bcb44d8e0cdab9e6a2aeef?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QM7o6Apkd8hQGqC-4vRIbi0Ouyem6rpYNC6WfC42OQk~meb2yb0wb6NTQLkGGYE5xYNb7PL~3SO-~TQ0oXpJgjJXt85l7Ah9U9VoDPMrh2Ehr3eTW3fG5GsH2rClecx2Jj8LV~kLqbGHiS-il7ZWC9lkJJWsZk1ZjdPjwpqqPyBVvXf3CJJ8lB2t8~hsinkb5tUlq8iu3vwntcfmLkQlVAfp8YbjwI1PoCFxqkz2kne-QFbqCIYUjal0prBtNI3ikWjF-3ePyw3pP3pflfxLhCUkJQFEznibasMbLBpfg7DdUT0jJNxtnNrB4uXc9dzM4FopWWRXlAzGaA3K2I--Zw__"
+            src="/home.png"
             alt="Nonvoyxonalar icon"
           />
           Nonvoyxonalar
         </button>
         <button className="tag-button">
           <img
-            src="https://s3-alpha-sig.figma.com/img/2446/27f7/5012f061777cfe138817759b77d52a60?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gOmlLYSIBFnP2iiMVvR7Eg4Xy7vWQPNQneHq5U4rEU1s1qpDw5sHs~pb481zQQ4NeW-HZ78m2LRT0blpqJaJnramSFzbCeUc~PYxZU7ZUnwvhfM3kblVrsJDWGzTjZVmBtFcUOzh3U3EQrS1krULPnOz5KxW2WyRf9Cgs~6RU-~m7BH3Cn0ATsOvQc9lcUYpDvAgYWAYsyIiJ-6NlGI8mV1nRXAH8MQHZyHxBf3B0Vp4NO94EWqRPozfHG5WHtZG7-qMchP18hnk5KOzY9GkgnFMylVbSU70UPwnqwlCsV0UnUW0U0BXsEgSNMVMr29TTBjqf34U8i~GV6pozbs-Jg__"
+            src="/filter.png"
             alt="Saralash icon"
           />
           Saralash

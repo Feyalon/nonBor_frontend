@@ -102,3 +102,16 @@
     border: none;
     height: 36px;
 }
+.product_details_content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product_details_content button{
+    background-color: transparent;
+}
+.product_details_content button img{
+    width: 20px;
+    height: 20px;
+}
