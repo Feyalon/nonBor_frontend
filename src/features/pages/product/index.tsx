@@ -4,6 +4,7 @@ import { observer } from "mobx-react";
 import useProduct from "../../../shared/hooks/useProduct";
 import { cartStore } from "../../../app/store/CartStore";
 import "./index.css";
+import "./product.css"
 import { favoriteStore } from "../../../app/store/FavoriteStore";
 import { Link } from "react-router";
 const ProductDetailsPage: React.FC = observer(() => {

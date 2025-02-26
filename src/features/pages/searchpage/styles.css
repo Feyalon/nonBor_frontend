@@ -135,12 +135,12 @@
     width: 20px;
 }
 .product-image{
-  width: 190px;
+  width: auto;
   height: 240px;
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-  
+
 }
 .product-price-content div{
   display: flex;;
@@ -148,3 +148,4 @@
   align-items: center;
   justify-content: center;
 }
+/* переделайте */
