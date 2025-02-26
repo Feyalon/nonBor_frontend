@@ -135,11 +135,8 @@
     width: 20px;
 }
 .product-image{
-  width: auto;
+  width: 400px;
   height: 240px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 20px;
 
 }
 .product-price-content div{
