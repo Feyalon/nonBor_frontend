@@ -9,7 +9,9 @@ const Layout: React.FC = () => {
       <main className="main-content">
         <Outlet />
       </main>
-      <BottomNav />
+      <footer>
+        <BottomNav />
+      </footer>
     </div>
   );
 };

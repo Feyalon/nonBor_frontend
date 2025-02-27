@@ -32,7 +32,13 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products, searchTerm = '' }) 
       {products.map((product, index) => (
         <Link key={`${product.name}-${index}`} to={`/${product.productId}`}>
           <div className="product-card">
-            <img src={product.photoUrl} alt="" className="product-image" />
+            <div className="product-image" style={{
+              backgroundImage: `url('${product.photoUrl}')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              height: "250px",
+              borderRadius: "10px"
+            }} />
             <div className="product-price">
               <div className="product-price-title">
                 <h3>{highlightText(product.name || '', searchTerm)}</h3>

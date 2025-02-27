@@ -58,6 +58,11 @@ h1 {
 .cart-icon img {
   width: 350px;
 }
+@media screen and (max-width: 400px) {
+  .cart-icon img {
+    width: 250px;
+  }
+}
 .cart-item-buttons button {
   background-color: transparent;
   border: none;
